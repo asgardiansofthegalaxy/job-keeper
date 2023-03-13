@@ -1,0 +1,117 @@
+.Navigation {
+  padding-top: 28px;
+}
+
+.Navigation .bg-dark {
+  background-color: initial !important;
+}
+
+.navLinkItem {
+  margin: 20px 18px;
+  font-family: roboto_condensedregular, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+}
+
+.navLinkItem:hover {
+  color: #3751c0 !important;
+}
+
+.navbar-dark .navbar-toggler,
+.navbar-dark .navbar-toggler:hover {
+  border: none;
+  background: 0 0 !important;
+}
+
+.navbar-dark .navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 40% 40%;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 40% 40%;
+}
+
+.navbar-dark .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-dark .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 40% 40%;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 40% 40%;
+}
+
+.navbar-dark .icon-bar {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #888;
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-dark .navbar-toggler.collapsed .icon-bar + .icon-bar {
+  margin-top: 6px;
+}
+
+.navbar-dark .navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+}
+
+.navbar-dark .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-dark .navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+}
+
+.navbar-nav {
+  margin-top: 20vh;
+  margin-bottom: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .navLinkItem {
+    margin: 10px 18px;
+    font-size: 0.95em;
+    line-height: 17px;
+  }
+
+  .navbar-nav {
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #3751c0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #000;
+}
+
+.navbar-dark .navbar-brand {
+    color: #000;
+}
+
+.brand-name {
+    font-size: 2em;
+    transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+}
