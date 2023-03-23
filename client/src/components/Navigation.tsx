@@ -1,6 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Navbar, Nav } from "react-bootstrap";
 
 import "../styles/Navigation.css";
 
@@ -13,7 +12,7 @@ const Navigation = () => {
     <div className="Navigation">
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Nav.Link href="/">
-          <Navbar.Brand className="brand-name">Job Seeker</Navbar.Brand>
+          <Navbar.Brand className="brand-name">Job Keeper</Navbar.Brand>
         </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav">
             <span className="icon-bar top-bar"></span>
@@ -30,7 +29,6 @@ const Navigation = () => {
                   {link.title}
                 </Nav.Link>
               ))}
-              <Button variant="outline-primary">Sign Up</Button>
             </Nav>
           </Navbar.Collapse>
       </Navbar>

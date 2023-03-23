@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
-import Content from "./pages/Content";
+import Content from "./components/Content";
 
 import "./App.css";
 
