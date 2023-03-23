@@ -4,7 +4,10 @@ import Team from "./Team";
 import About from "./About";
 import Home from "./Home";
 import Layout from "./Layout";
-import Dashboard from "./Dashboard"
+import Dashboard from "./Dashboard";
+
+import CarlosImage from "../assets/carlos_trejo.jpeg";
+import JuanImage from "../assets/juan_trejo.jpeg";
 
 import "../styles/Content.css";
 
@@ -12,12 +15,14 @@ const teamMembers = [
   {
     id: 1,
     name: 'Juan Trejo',
-    pictureUrl: 'https://example.com/alice.jpg',
+    description: 'Juan Trejo is a software engineer with 5+ years of experience in building scalable systems at high-growth companies like Cummins, Enthought, and Indeed. He has designed, built, operated, and optimized many interesting distributed systems used by millions of users.',
+    pictureUrl: JuanImage,
   },
   {
     id: 2,
     name: 'Carlos Trejo',
-    pictureUrl: 'https://example.com/bob.jpg',
+    description: 'Carlos Trejo is a software engineer with 5+ years of experience in building scalable systems at high-growth companies like Zello, IBM, and Udemy. He has designed, built, operated, and optimized many interesting distributed systems used by millions of users.',
+    pictureUrl: CarlosImage,
   },
 ];
 
