@@ -1,25 +1,24 @@
 import React from "react";
 
-import "../styles/Team.css";
+import styles from "../styles/Team.module.css";
 
 interface TeamMemberProps {
   name: string;
-  description: string,
-  pictureUrl: string;
+  description: string;
+  image: string;
 }
 
-const TeamMember = ({ name, description, pictureUrl }: TeamMemberProps) => (
-  <div className="team-member">
-    <div className="team-wrap">
-      <div className="team-member-img">
-        <img src={pictureUrl} alt={`Picture of ${name}`} />
-      </div>
-      <div className="team-member-name">
-        <h3>{name}</h3>
-      </div>
+const TeamMember = ({ name, description, image }: TeamMemberProps) => (
+  <div className={styles.card}>
+    <div className={styles.cardBody}>
+      <img
+        src={image}
+        alt={`Picture of ${name}`}
+        className={styles.cardImage}
+      />
+      <h3 className={styles.cardTitle}>{name}</h3>
     </div>
-    <p>{description}</p>
-
+    <p className={styles.cardDescription}>{description}</p>
   </div>
 );
 
@@ -28,20 +27,20 @@ interface TeamProps {
     id: number;
     name: string;
     description: string;
-    pictureUrl: string;
+    image: string;
   }[];
 }
 
 const Team = ({ members }: TeamProps) => (
-  <div className="team">
+  <div className={styles.body}>
     <h2>Our Team</h2>
-    <div className="team-members">
+    <div className={styles.teamMembers}>
       {members.map((member) => (
         <TeamMember
           key={member.id}
           name={member.name}
           description={member.description}
-          pictureUrl={member.pictureUrl}
+          image={member.image}
         />
       ))}
     </div>

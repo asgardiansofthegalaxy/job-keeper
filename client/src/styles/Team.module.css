@@ -1,0 +1,101 @@
+.body {
+    display: inline-block;
+    align-items: center;
+}
+
+.body h2 {
+  height: 67px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #282828;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.teamMembers {
+  display: block;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px 0 rgba(81, 189, 148, 0.4);
+  padding: 32px;
+  margin: 0 20px 20px 0;
+}
+
+.cardImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  margin-left: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #282828;
+}
+
+.cardDescription {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 0.85);
+  line-height: 30px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .teamMembers {
+    display: block;
+    align-items: center;
+  }
+
+  .card {
+    width: 660px
+  }
+
+  .cardTitle {
+    font-size: 32px;
+  }
+
+  .cardDescription {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .teamMembers {
+    display: block;
+    align-items: center;
+  }
+
+  .card {
+    width: 860px
+  }
+
+  .cardTitle {
+    font-size: 32px;
+  }
+
+  .cardDescription {
+    font-size: 18px;
+  }
+}

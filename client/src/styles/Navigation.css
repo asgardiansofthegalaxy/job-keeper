@@ -23,9 +23,12 @@
 }
 
 .navbar-dark .navbar-toggler,
-.navbar-dark .navbar-toggler:hover {
+.navbar-dark .navbar-toggler:hover,
+.navbar-dark .navbar-toggler:focus {
   border: none;
   background: 0 0 !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-dark .navbar-toggler .top-bar {
@@ -107,12 +110,12 @@
 }
 
 .navbar-dark .navbar-brand {
-    color: #000;
+  color: #000;
 }
 
-.brand-name {
-    font-size: 2em;
-    transition: color .5s ease;
-    -webkit-transition: color .5s ease;
-    font-family: roboto_condensedregular, sans-serif;
+.navbar-dark .navbar-brand {
+  font-size: 2em;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  font-family: roboto_condensedregular, sans-serif;
 }

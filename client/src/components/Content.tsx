@@ -16,13 +16,13 @@ const teamMembers = [
     id: 1,
     name: 'Juan Trejo',
     description: 'Juan Trejo is a software engineer with 5+ years of experience in building scalable systems at high-growth companies like Cummins, Enthought, and Indeed. He has designed, built, operated, and optimized many interesting distributed systems used by millions of users.',
-    pictureUrl: JuanImage,
+    image: JuanImage,
   },
   {
     id: 2,
     name: 'Carlos Trejo',
     description: 'Carlos Trejo is a software engineer with 5+ years of experience in building scalable systems at high-growth companies like Zello, IBM, and Udemy. He has designed, built, operated, and optimized many interesting distributed systems used by millions of users.',
-    pictureUrl: CarlosImage,
+    image: CarlosImage,
   },
 ];
 
@@ -34,7 +34,7 @@ const Content = () => {
           <Route path="/" element={<Layout />}>
             <Route index path="/" Component={Home} />
             <Route path="/about" Component={About} />
-            <Route path="/team" element={<Team members={teamMembers} />} />
+            <Route path="/our-team" element={<Team members={teamMembers} />} />
           </Route>
           <Route path="/dashboard" Component={Dashboard} />
         </Routes>

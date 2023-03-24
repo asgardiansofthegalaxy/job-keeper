@@ -6,13 +6,13 @@ import "../styles/Navigation.css";
 const Navigation = () => {
   const links = [
     { href: "/about", title: "About" },
-    { href: "/team", title: "Team" },
+    { href: "/our-team", title: "Team" },
   ];
   return (
     <div className="Navigation">
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Nav.Link href="/">
-          <Navbar.Brand className="brand-name">Job Keeper</Navbar.Brand>
+          <Navbar.Brand>Job Keeper</Navbar.Brand>
         </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav">
             <span className="icon-bar top-bar"></span>

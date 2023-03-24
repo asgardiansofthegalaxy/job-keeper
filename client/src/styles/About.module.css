@@ -1,0 +1,21 @@
+.body {
+  display: inline-block;
+  align-items: center;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+.body h2 {
+  height: 67px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #282828;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.body p {
+  text-align: justify;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
